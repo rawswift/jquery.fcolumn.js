@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample jquery.fcolumn.js</title>
+<style>
+table {
+    border-collapse:collapse;
+}
+table, th, td {
+    border:#ccc solid 1px;
+}
+</style>
+</head>
+<body>
+
+<div style="width:500px;">
+
+    <table id="myTable">
+        <thead>
+            <th>col1 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</th>
+            <th>col2<br />test</th>
+            <th>col3</th>
+            <th>col4</th>
+            <th>col5</th>
+            <th>col6</th>
+            <th>col7</th>
+            <th>col8</th>
+            <th>col9</th>
+            <th>col10</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>foo-x</td>
+                <td>foo</td>
+                <td>foo</td>
+                <td>foo</td>
+                <td>foo</td>
+                <td>foo</td>
+                <td>foo</td>
+                <td>foo</td>
+                <td>foo</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>bar-x Lorem Ipsum Lorem Ipsum Lorem Ipsum</td>
+                <td>bar</td>
+                <td>bar</td>
+                <td>bar</td>
+                <td>bar</td>
+                <td>bar</td>
+                <td>bar</td>
+                <td>bar</td>
+                <td>bar</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td>foobar-bar<br />foo bar</td>
+                <td>foobar</td>
+                <td>foobar</td>
+                <td>foobar</td>
+                <td>foobar</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris ut neque eleifend aliquet. Duis laoreet, ligula et sollicitudin eleifend, risus sem pellentesque est.</td>
+                <td>foobar</td>
+                <td>foobar</td>
+                <td>foobar</td>
+                <td>foobar</td>
+            </tr>
+        </tbody>    
+    </table>
+
+</div>
+
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../src/jquery.fcolumn.min.js" type="text/javascript"></script>
+<script>
+$( document ).ready(function() {
+    $('#myTable').fcolumn({
+        background: "#eee", // fixed column background color (optional)
+        width: "100px" // fixed column width (optional)
+    });
+})
+</script>
+
+</body>
+</html>
